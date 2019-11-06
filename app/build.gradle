@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+apply from:"../default.gradle"
+
+
+android {
+    defaultConfig {
+        applicationId "com.eighteengray.baseproject"
+        manifestPlaceholders = ["tencentAuthId": "tencent123456"]   // tencent+你的AppId
+        resConfigs "zh"
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+}
+
