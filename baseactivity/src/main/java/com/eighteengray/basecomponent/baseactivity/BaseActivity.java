@@ -19,7 +19,7 @@ import com.eighteengray.basecomponent.swipeback.SwipeBackLayout;
  * BaseActivity
  * 通用行为：顶部状态栏透明，左划finish
  */
-public abstract class BaseActivity extends SwipeBackActivity
+public class BaseActivity extends SwipeBackActivity
 {
     protected RelativeLayout common_title;
     protected Button btn_back;

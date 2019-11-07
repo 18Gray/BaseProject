@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navi_facebook"
+            android:icon="@mipmap/done_white_24dp"
+            android:title="Facebook"/>
+        <item
+            android:id="@+id/navi_github"
+            android:icon="@mipmap/ic_add_white"
+            android:title="Github"/>
+        <item
+            android:id="@+id/navi_google"
+            android:icon="@mipmap/ic_search_white"
+            android:title="Google"/>
+        <item
+            android:id="@+id/navi_linkedin"
+            android:icon="@mipmap/back_arrow_white_24dp"
+            android:title="LinkedIn"/>
+
+        <item
+            android:id="@+id/navi_pinterest"
+            android:icon="@mipmap/ic_bookmark_white"
+            android:title="Pinterest"/>
+
+        <item
+            android:id="@+id/navi_skype"
+            android:icon="@mipmap/ic_bookmark_white"
+            android:title="Skype"/>
+
+        <item
+            android:id="@+id/navi_snapchat"
+            android:icon="@mipmap/shadow_left"
+            android:title="Snapchat"/>
+
+        <item
+            android:id="@+id/navi_twttier"
+            android:icon="@mipmap/ic_center_focus_strong_white"
+            android:title="Twttier"/>
+
+        <item
+            android:id="@+id/navi_youtube"
+            android:icon="@mipmap/search_white_24dp"
+            android:title="Youtube"/>
+    </group>
+
+
+</menu>

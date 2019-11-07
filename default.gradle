@@ -9,6 +9,11 @@ android {
         versionName "1.0"
     }
 
+    /*compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }*/
+
     buildTypes {
         release {
             minifyEnabled true
@@ -30,15 +35,16 @@ dependencies {
     implementation rootProject.ext.dependencies["cardview-v7"]
     implementation rootProject.ext.dependencies["recyclerview-v7"]
 
-
     // 组织结构库
     implementation rootProject.ext.dependencies["rxjava"]
     implementation rootProject.ext.dependencies["rxandroid"]
     implementation rootProject.ext.dependencies["eventbus"]
     implementation rootProject.ext.dependencies["dagger"]
     annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+
     implementation rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
     //网络与数据处理库
     implementation rootProject.ext.dependencies["retrofit"]
     implementation rootProject.ext.dependencies["adapter-rxjava"]

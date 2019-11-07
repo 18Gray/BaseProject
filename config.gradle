@@ -1,7 +1,7 @@
 
 ext {
     android = [
-            minSdkVersion:21,
+            minSdkVersion:24,
             targetSdkVersion:28,
             compileSdkVersion:28,
             buildToolsVersion:"28.0.3",
@@ -54,8 +54,6 @@ ext {
             "eventbus" : "org.greenrobot:eventbus:${version["eventbus"]}",
             "dagger" : "com.google.dagger:dagger:${version["dagger2"]}",
             "dagger-compiler" : "com.google.dagger:dagger-compiler:${version["dagger2"]}",
-            "butterknife" : "com.jakewharton:butterknife:${version["butterknifeVersion"]}",
-            "butterknife-compiler" : "com.jakewharton:butterknife-compiler:${version["butterknifeVersion"]}",
 
             "retrofit" : "com.squareup.retrofit2:retrofit:${version["retrofitVersion"]}",
             "adapter-rxjava" : "com.squareup.retrofit2:adapter-rxjava:${version["retrofitVersion"]}",
@@ -74,6 +72,10 @@ ext {
 
             "leakcanary-android" : "com.squareup.leakcanary:leakcanary-android:${version["leakcanary"]}",
             "leakcanary-android-no-op" : "com.squareup.leakcanary:leakcanary-android-no-op:${version["leakcanary"]}",
+
+            "butterknifepath" : "com.jakewharton:butterknife-gradle-plugin:${version["butterknifeVersion"]}",
+            "butterknife" : "com.jakewharton:butterknife:${version["butterknifeVersion"]}",
+            "butterknife-compiler" : "com.jakewharton:butterknife-compiler:${version["butterknifeVersion"]}",
     ]
 
 }
