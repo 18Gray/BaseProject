@@ -113,9 +113,11 @@ public abstract class BaseListFragment extends BaseFragment {
             }
         });
 
-
-        layoutManager = new LinearLayoutManager(getActivity());
         layoutManager = setLayoutManager();
+        if(layoutManager == null){
+            layoutManager = new LinearLayoutManager(getActivity());
+        }
+
         recycler_view.setLayoutManager(layoutManager);
         recycler_view.setAdapter(mAdapter);
 

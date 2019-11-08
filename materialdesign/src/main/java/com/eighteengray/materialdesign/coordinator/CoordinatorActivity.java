@@ -3,6 +3,7 @@ package com.eighteengray.materialdesign.coordinator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -10,6 +11,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -41,22 +43,33 @@ public class CoordinatorActivity extends BaseActivity {
     CoordinatorLayout coordinator_layout;
     @BindView(R2.id.appbar_layout)
     AppBarLayout appbar_layout;
+    @BindView(R2.id.collapsing_toolbar_layout)
+    CollapsingToolbarLayout collapsing_toolbar_layout;
     @BindView(R2.id.toolbar)
     Toolbar toolbar;
+    @BindView(R2.id.layout_content_coordinator)
+    View layout_content_coordinator;
+
 
     // 中部悬停按钮
     @BindView(R2.id.tab_layout)
     TabLayout tab_layout;
 
     // 下部滑动列表
+    @BindView(R2.id.nested_scroll_view)
+    NestedScrollView nested_scroll_view;
     @BindView(R2.id.view_pager)
     ViewPager view_pager;
     List<Fragment> fragmentList = new ArrayList<>();
     FragmentAdapter fragmentAdapter;
+    List<String> titles;
+    ContentFragment contentFragment1;
+    ContentFragment contentFragment2;
+    ContentFragment contentFragment3;
+
 
     @BindView(R2.id.float_action_button)
     FloatingActionButton float_action_button;
-
 
 
     @Override
@@ -72,6 +85,7 @@ public class CoordinatorActivity extends BaseActivity {
     private void initView()
     {
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setTitleTextColor(getResources().getColor(R.color.text));
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.text));
         toolbar.setNavigationOnClickListener(new View.OnClickListener()
@@ -83,22 +97,38 @@ public class CoordinatorActivity extends BaseActivity {
             }
         });
 
-        List<String> titles = new ArrayList<>();
+        appbar_layout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
+                if (i <= -layout_content_coordinator.getHeight() / 2) {
+                    collapsing_toolbar_layout.setTitle("1111");
+                } else {
+                    collapsing_toolbar_layout.setTitle("2222");
+                }
+            }
+        });
+
+        titles = new ArrayList<>();
         titles.add("Page One");
-//        titles.add("Page Two");
-//        titles.add("Page Three");
+        titles.add("Page Two");
+        titles.add("Page Three");
         tab_layout.addTab(tab_layout.newTab().setText(titles.get(0)));
-//        tab_layout.addTab(tab_layout.newTab().setText(titles.get(1)));
-//        tab_layout.addTab(tab_layout.newTab().setText(titles.get(2)));
+        tab_layout.addTab(tab_layout.newTab().setText(titles.get(1)));
+        tab_layout.addTab(tab_layout.newTab().setText(titles.get(2)));
 
-        ContentFragment contentFragment = new ContentFragment();
+        contentFragment1 = new ContentFragment();
+        contentFragment2 = new ContentFragment();
+        contentFragment3 = new ContentFragment();
 
-        fragmentList.add(contentFragment);
+        fragmentList.add(contentFragment1);
+        fragmentList.add(contentFragment2);
+        fragmentList.add(contentFragment3);
         fragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragmentList, titles);
         view_pager.setAdapter(fragmentAdapter);
+        view_pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tab_layout));
 
         tab_layout.setupWithViewPager(view_pager);
-        tab_layout.setTabsFromPagerAdapter(fragmentAdapter);
+        tab_layout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(view_pager));
 
         float_action_button.setOnClickListener(new View.OnClickListener()
         {
@@ -116,6 +146,7 @@ public class CoordinatorActivity extends BaseActivity {
             @Override
             public void onClick(View view)
             {
+                finish();
             }
         });
 
