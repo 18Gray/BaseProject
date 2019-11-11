@@ -161,7 +161,7 @@ public class CoordinatorActivity extends BaseActivity {
             }
         });
 
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, dl_main, R.string.leak_canary_display_activity_label, R.string.app_name);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, dl_main, R.string.app_name, R.string.app_name);
         dl_main.setDrawerListener(actionBarDrawerToggle);
     }
 
@@ -179,9 +179,9 @@ public class CoordinatorActivity extends BaseActivity {
     {
         if(item.getItemId() == R.id.home){
             dl_main.openDrawer(Gravity.LEFT);
-        } else if(item.getItemId() == R.id.homeAsUp) {
+        } /*else if(item.getItemId() == R.id.homeAsUp) {
             dl_main.openDrawer(Gravity.LEFT);
-        } else if(item.getItemId() == R.id.action_search) {
+        }*/ else if(item.getItemId() == R.id.action_search) {
             Toast.makeText(getApplicationContext(), "跳转搜索页", Toast.LENGTH_SHORT).show();
         } else if(item.getItemId() == R.id.action_notification) {
             Toast.makeText(getApplicationContext(), "跳转消息页", Toast.LENGTH_SHORT).show();
