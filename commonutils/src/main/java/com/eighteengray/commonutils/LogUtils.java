@@ -3,7 +3,6 @@ package com.eighteengray.commonutils;
 
 import android.util.Log;
 
-import com.eighteengray.commonutillibrary.BuildConfig;
 
 
 public class LogUtils

@@ -14,9 +14,6 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
-
-import com.eighteengray.commonutillibrary.FileUtils;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -159,7 +156,7 @@ public class ImageUtils
      */
     public static void saveBitmap(Bitmap bitmap, String path, String name)
     {
-        File f = com.eighteengray.commonutillibrary.FileUtils.createFile(path, name);
+        File f = FileUtils.createFile(path, name);
         FileOutputStream fos = null;
         try
         {

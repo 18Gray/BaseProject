@@ -1,6 +1,5 @@
 package com.eighteengray.commonutils;
 
-import com.eighteengray.commonutillibrary.SDCardUtils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
