@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--common color-->
+    <color name="bg_topbar">#2C3F50</color>
+    <color name="bg_bottombar">#2C3F50</color>
+    <color name="common_title_bg">#64000000</color>
+    <color name="gray_light">#eaeaea</color>
+    <color name="gray_middle">#d8d8d8</color>
+    <color name="gray_deep">#fffcf8</color>
+    <color name="gray_4">#f1f1f1</color>
+    <color name="gray_5">#bebbb4</color>
+    <color name="gray_focus">#113c52</color>
+    <color name="gray_unfocus">#919191</color>
+    <color name="gray_bg_popupwindow">#E5E5E5</color>
+    <color name="red_light">#FF8E8E</color>
+    <color name="red_middle">#FF4242</color>
+    <color name="red_deep">#CC0000</color>
+    <color name="white_light">#E7E7E9</color>
+    <color name="white_middle">#F4F4F4</color>
+    <color name="white_deep">#FFFFFF</color>
+    <color name="black_light">#323232</color>
+    <color name="black_middle">#5f5f5f</color>
+    <color name="black_deep">#221413</color>
+    <color name="black_jianbian">#737783</color>
+    <color name="blue_light">#6ACFFF</color>
+    <color name="blue_middle">#3893DC</color>
+    <color name="blue_deep">#2C3F50</color>
+    <color name="blue_two">#34a4eb</color>
+    <color name="brown_middle">#423637</color>
+    <color name="green_light">#A4EF87</color>
+    <color name="green_middle">#31D041</color>
+    <color name="green_deep">#29B437</color>
+    <color name="qing_light">#38d48c</color>
+    <color name="pink_light">#fa3935</color>
+    <color name="orange_light">#828282</color>
+    <color name="yellow_light">#fffcf8</color>
+    <color name="yellow_middle">#DFCFC0</color>
+    <color name="yellow_deep">#FFFF3C</color>
+
+    <!--calendar-->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="custom_header_text">#85B100</color>
+    <color name="custom_selected">#A8D324</color>
+    <color name="custom_background">#F0F8DB</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+
+</resources>

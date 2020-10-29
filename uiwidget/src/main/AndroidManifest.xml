@@ -1,0 +1,32 @@
+<manifest package="com.eighteengray.materialdesign"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+
+        <activity android:name="com.eighteengray.coordinator.CoordinatorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+
+        <activity android:name="com.eighteengray.calendar.SampleTimesSquareActivity"
+            />
+
+        <activity android:name="com.eighteengray.progressbar.ProgressBarActivity"
+            />
+
+        <activity android:name="com.eighteengray.progressbar.CircularProgressActivity"
+            />
+
+        <activity android:name="com.eighteengray.progressbar.NumberProgressBarActivity"
+            />
+
+        <activity android:name="com.eighteengray.textview.TextViewActivity"/>
+        <activity android:name="com.eighteengray.textview.StyleTextViewActivity"/>
+        <activity android:name="com.eighteengray.textview.WaveTextViewActivity"/>
+
+    </application>
+
+</manifest>

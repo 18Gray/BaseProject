@@ -1,1 +1,1 @@
-include ':app', ':baseactivity', ':commonutils', ':materialdesign', ':commonrecyclerview'
+include ':app', ':baseactivity', ':commonutils',  ':commonrecyclerview', ':uiwidget'

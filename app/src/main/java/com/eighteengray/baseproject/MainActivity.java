@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.eighteengray.materialdesign.coordinator.CoordinatorActivity;
+import com.eighteengray.calendar.SampleTimesSquareActivity;
+import com.eighteengray.coordinator.CoordinatorActivity;
+import com.eighteengray.progressbar.ProgressBarActivity;
+import com.eighteengray.textview.TextViewActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,16 +22,30 @@ public class MainActivity extends Activity {
         System.loadLibrary("native-lib");
     }
 
-    @BindView(R.id.sample_text)
-    TextView sample_text;
+    @BindView(R.id.coordinator)
+    TextView coordinator;
+    @BindView(R.id.progressbar)
+    TextView progressbar;
+    @BindView(R.id.calendar)
+    TextView calendar;
+    @BindView(R.id.textview)
+    TextView textview;
+    @BindView(R.id.timer)
+    TextView timer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        sample_text.setText(stringFromJNI());
-        sample_text.setOnClickListener(new View.OnClickListener() {
+        initView();
+//        coordinator.setText(stringFromJNI());
+    }
+
+    private void initView(){
+
+        coordinator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CoordinatorActivity.class);
@@ -36,6 +53,37 @@ public class MainActivity extends Activity {
             }
         });
 
+        progressbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProgressBarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SampleTimesSquareActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        textview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        timer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CoordinatorActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /**

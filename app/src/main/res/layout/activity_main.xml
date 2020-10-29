@@ -1,16 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/sample_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@color/accent_main"
+        android:text="CoordinatorActivity"
+        android:textColor="@color/primary_dark_main"
+        android:textSize="28dp"
         />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@color/accent"
+        android:text="CalendarActivity"
+        android:textColor="@color/primary_dark_main"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@color/accent"
+        android:text="ProgressBarActivity"
+        android:textColor="@color/primary_dark_main"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@color/primary"
+        android:text="TextViewActivity"
+        android:textColor="@color/primary_dark_main"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@color/primary_dark"
+        android:text="TimerActivity"
+        android:textColor="@color/primary_dark_main"
+        android:textSize="28dp"
+        />
+
+</LinearLayout>

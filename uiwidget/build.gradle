@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+apply from: "../default.gradle"
+
+//https://github.com/wasabeef/awesome-android-ui material design的控件在这里寻找
+
+dependencies {
+    implementation project(':baseactivity')
+    implementation project(':commonrecyclerview')
+}
