@@ -18,6 +18,7 @@ buildscript {
         maven { url 'https://repo1.maven.org/maven2/' }
         maven { url 'https://developer.huawei.com/repo/'}
         maven { url 'https://repo.huaweicloud.com/repository/maven' }
+
     }
 
     dependencies {
