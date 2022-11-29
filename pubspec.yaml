@@ -11,6 +11,10 @@ dependencies:
     sdk: flutter
 
 ################################################  UI库  ###################################################
+  bruno: 3.1.0                # 企业级移动端Flutter综合UI组件库
+  getwidget: 3.0.1            # 综合UI组件库
+  fsuper: 2.1.1               # 综合UI组件库
+
   city_pickers: 1.1.3         # 城市选择器
   intro_slider: 4.2.0         # 启动时的滑动引导页
   intro_views_flutter: 3.2.0  # 有动画效果的引导页
@@ -21,29 +25,46 @@ dependencies:
   flutter_echarts: 2.4.0      # 饼图、条形图等
   badges: 2.0.3               # 红点角标
   table_calendar: 3.0.8       # 日历
+  argon_buttons_flutter: 1.1.0 # 按钮变换动画
+  flutter_screenutil: 5.6.0   # 屏幕适配工具
+
+  curved_drawer: 0.1.2        # 炫酷的抽屉
+  sidebarx: 0.14.0            # 适配多端的抽屉
   unicorndial: 1.1.5          # 旋转弹出菜单
   flutter_speed_dial: 6.2.0   # 旋转弹出菜单
   full_screen_menu: 1.0.0     # 全屏弹出菜单
   flutter_slidable: 2.0.0     # 侧滑菜单
   flutter_swipe_action_cell: 3.0.4  # 侧滑菜单
-  argon_buttons_flutter: 1.1.0      # 按钮变换动画
+  flutter_easyloading: 3.0.5  # 弹窗
+  adaptive_dialog: 1.8.0+1    # 适配双端的弹窗
+
   shimmer: 2.0.0              # 从左到右跑马灯闪烁字体
+  extended_text: 9.1.2        # fluttercandies组织的富文本展示
+  extended_text_field: 10.2.0 # fluttercandies组织的富文本输入
+  flutter_quill: 6.1.6        # 富文本编辑器
+
   sleek_circular_slider: 2.0.1      # 各种样式的进度环
   syncfusion_flutter_sliders: 20.3.59 # 拖动进度条
-  flutter_easyloading: 3.0.5  # 弹窗
-  flutter_screenutil: 5.6.0   # 屏幕适配工具
 
+
+  extended_tabs: 4.0.1        # Tab/TabBar/TabView 扩展组件, 支持 TabView 嵌套滚动
   azlistview: 2.0.0           # 城市列表、联系人列表的索引悬停
   flutter_staggered_grid_view: 0.6.2  # 多样式组合列表
   flutter_staggered_animations: 1.1.1 # 多样式组合列表的动画
+  extended_nested_scroll_view: 5.1.3  # nested_scroll_view的扩展
+  extended_list: 3.0.0        # ListView的扩展
+  extended_sliver: 2.1.3      # sliver的扩展
+  waterfall_flow: 3.0.2       # fluttercandies组织的瀑布流
   pull_to_refresh: 2.0.0      # 下拉刷新，上拉加载
   flutter_reorderable_list: 1.2.0     # 可拖动的列表
   reorderables: 0.5.1         # 可拖动的列表，网格
-
+  flutter_form_builder: 7.7.0 # 生成表格的库
 
 
 ################################################  功能库  ###################################################
   provider: 6.0.4             # 状态管理
+  get: 4.6.5                  # getX库
+  flutter_riverpod: 2.1.1     # provider的优化库
   dio: 4.0.6                  # 网络库
   retrofit: 3.3.1             # 网络库
   webview_flutter: 3.0.4      # webview
@@ -59,6 +80,10 @@ dependencies:
   amap_flutter_location: 3.0.0  # 高德定位
   jpush_flutter: 2.4.0        # 极光推送
   jmessage_flutter: 2.2.0     # 极光IM
+
+  flutter_native_splash: 2.2.16   # 开屏
+
+  flutter_reactive_ble: 5.0.2     # 蓝牙
 
 ################################################  多媒体库  ###################################################
   video_player: 2.4.8         # 视频播放器
@@ -81,8 +106,13 @@ dependencies:
   flutter_signin_button: 2.0.0     # 社交帐号登录
 
 
-
-
+################################################  PC/WEB库  ###################################################
+  fluent_ui: 4.1.0            # 适配Windows的组件库
+  macos_ui: 1.7.5             # 适配Mac的组件库
+  ant_design_flutter: 0.0.1+5 # 适配PC/WEB的组件库
+  responsive_framework: 0.2.0 # 适配多端的UI框架
+  flutter_adaptive_ui: 0.8.0+1 # 适配多端的UI框架
+  sizer: 2.0.15               # 多端适配框架
 
 dev_dependencies:
   flutter_test:
