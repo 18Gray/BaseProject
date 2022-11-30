@@ -10,6 +10,201 @@ dependencies:
   flutter:
     sdk: flutter
 
+################################################  UI库  ###################################################
+  bruno: 3.1.0                # 企业级移动端Flutter综合UI组件库
+  getwidget: 3.0.1            # 综合UI组件库
+  fsuper: 2.1.1               # 综合UI组件库
+
+  extended_sliver: 2.1.3      # sliver的扩展，可用于AppBar
+
+  curved_drawer: 0.1.2        # 炫酷的抽屉
+  sidebarx: 0.14.0            # 适配多端的抽屉
+
+  extended_tabs: 4.0.1        # Tab/TabBar/TabView 扩展组件, 支持 TabView 嵌套滚动
+  cupertino_tabbar: 2.0.0     # TabBar
+  tab_indicator_styler: 2.0.0 # TabBar
+  tab_container: 2.0.0        # TabBar
+
+  curved_navigation_bar: 1.0.3    # BottomBar
+  salomon_bottom_bar: 3.3.1       # BottomBar
+  bubble_bottom_bar: 2.0.0        # BottomBar
+  badges: 2.0.3                   # 红点角标
+
+  concentric_transition: 1.0.3    # 引导页
+  intro_slider: 4.2.0         # 启动时的滑动引导页
+  intro_views_flutter: 3.2.0  # 有动画效果的引导页
+  showcaseview: 2.0.0+1       # 指引页动画
+  flutter_intro: 3.0.2        # 指引页动画
+
+  swipe_deck: 1.1.0           # 卡牌滑动
+  card_swiper: 2.0.4          # 左右滑动
+  liquid_swipe: 3.0.0         # 特效左右滑动
+  swipeable_card_stack: 0.0.5 # Tinder中的左右滑动
+  appinio_swiper: 1.1.1       # Tinder中的左右滑动
+
+  animations: 2.0.7           # 官方维护的路由过渡动画，页面切换动画
+  simple_animations: 5.0.0+3  # 简化的动画库
+  animate_do: 3.0.2           # 更简化的动画库
+  lottie: 2.0.0               # lottie动画库
+  flutter_animated_icons: 1.0.1   # 2400+ 按钮动画
+  argon_buttons_flutter: 1.1.0    # 按钮变换动画
+  flutter_animated_button: 2.0.2  # 动画按钮
+  zflutter: 0.0.1+2               # 3D立体动画
+  rive: 0.9.1                     # 动画
+
+  flutter_spinkit: 5.1.0      # 各种加载进度动画
+  loading_animation_widget: 1.2.0+3   # 各种加载进度动画
+  loading_indicator: 3.1.0    # 各种加载进度动画
+  progress_state_button: 1.0.4    # 进度和状态转换的按钮
+  sleek_circular_slider: 2.0.1    # 各种样式的进度环
+  syncfusion_flutter_sliders: 20.3.59 # 拖动进度条
+
+  syncfusion_flutter_gauges: 20.3.59  # 条形图，饼图，仪表等
+  fl_chart: 0.55.2            # 饼图、条形图等
+  flutter_echarts: 2.4.0      # 饼图、条形图等
+  syncfusion_flutter_charts: 20.3.59    # 饼图、条形图等
+  timelines: 0.1.0            # 时间轴
+  timeline_tile: 2.0.0        # 时间轴
+
+  flutter_screenutil: 5.6.0   # 屏幕适配工具
+  unicorndial: 1.1.5          # 旋转弹出菜单
+  flutter_speed_dial: 6.2.0   # 旋转弹出菜单
+  full_screen_menu: 1.0.0     # 全屏弹出菜单
+  flutter_slidable: 2.0.0     # 侧滑菜单
+  flutter_swipe_action_cell: 3.0.4  # 侧滑菜单
+  flutter_easyloading: 3.0.5  # 弹窗
+  adaptive_dialog: 1.8.0+1    # 适配双端的弹窗
+  sliding_up_panel: 2.0.0+1   # bottom_sheet
+  modal_bottom_sheet: 2.1.2   # bottom_sheet
+
+  pull_to_refresh: 2.0.0      # 下拉刷新，上拉加载
+  liquid_pull_to_refresh: 3.0.1   # 带动画效果的下拉刷新，上拉加载
+  azlistview: 2.0.0           # 城市列表、联系人列表的索引悬停
+  flutter_staggered_grid_view: 0.6.2  # 多样式组合列表
+  extended_nested_scroll_view: 5.1.3  # nested_scroll_view的扩展
+  extended_list: 3.0.0        # ListView的扩展
+  waterfall_flow: 3.0.2       # 瀑布流
+  flutter_reorderable_list: 1.2.0     # 可拖动的列表
+  reorderables: 0.5.1         # 可拖动的列表，网格
+  flutter_form_builder: 7.7.0 # 生成表格的库
+  syncfusion_flutter_datagrid: 20.3.59    # 股票软件的滑动网格列表
+  flutter_staggered_animations: 1.1.1     # 多样式组合列表的动画
+  animation_list: 2.2.1                   # 列表动画
+  auto_animated: 3.1.0                    # 列表动画
+
+  animated_flip_counter: 0.2.5  # 动画数字
+  animated_text_kit: 4.2.2    # 动画字体
+  shimmer: 2.0.0              # 从左到右跑马灯闪烁字体
+  marquee_widget: 1.2.0       # 跑马灯字体
+  marquee_text: 2.5.0+1       # 跑马灯字体
+  extended_text: 9.1.2        # 富文本展示
+  extended_text_field: 10.2.0 # 富文本输入
+  flutter_quill: 6.1.6        # 富文本编辑器
+  auto_size_text: 3.0.0       # 自动处理大小、换行的text
+  mask_text_input_formatter: 2.4.0    # 输入文字的格式化
+  lpinyin: 2.0.3              # 汉字转换拼音库
+
+  avatar_stack: 1.1.2         # 头像列表
+  city_pickers: 1.1.3         # 城市选择器
+  smooth_star_rating: 1.1.1   # 评分组件
+  flutter_rating_bar: 4.0.1   # 评分组件
+  table_calendar: 3.0.8       # 日历
+  syncfusion_flutter_calendar: 20.3.59    # 日历
+  syncfusion_flutter_datepicker: 20.3.59  # 日期选择
+  slide_switcher: 1.1.2       # 各种样式的switcher
+
+
+################################################  功能库  ###################################################
+  provider: 6.0.4             # 状态管理
+  get: 4.6.5                  # getX库
+  flutter_riverpod: 2.1.1     # provider的优化库
+  dio: 4.0.6                  # 网络库
+  retrofit: 3.3.1             # 网络库
+  webview_flutter: 3.0.4      # webview
+  permission_handler: 10.2.0  # 权限库
+  logger: 1.1.0               # 小型，易于使用且可扩展的记录器，可打印精美的日志。
+
+  shared_preferences: 2.0.15  # sp存储
+  sqflite: 2.2.0+3            # 数据库
+  path_provider: 2.0.11       # 适配多平台查找可用文件系统路径
+  file_picker: 5.2.2          # 打开文件系统
+  flutter_archive: 5.0.0      # 在 Android、iOS 和 macOS 中创建和提取 ZIP 存档文件。递归压缩目录或给定文件列表中的所有文件。
+  archive: 3.3.5              # 为各种存档和压缩格式（例如 zip、tar、bzip2、gzip 和 zlib）提供编码器和解码器。
+  flutter_uploader: 1.2.1     # 用于创建和管理上传任务的插件。
+
+  url_launcher: 6.1.7         # 吊起系统应用
+  amap_flutter_map: 3.0.0     # 高德地图
+  amap_flutter_location: 3.0.0  # 高德定位
+  jpush_flutter: 2.4.0        # 极光推送
+  jmessage_flutter: 2.2.0     # 极光IM
+  uni_links: 0.5.1            # 用于接受传入链接的 Flutter 插件 - 应用程序/深层链接 (Android)、通用链接和自定义 URL 方案 (iOS)。
+  ota_update: 4.0.2           # 为 Android 和 iOS 提供 ota 更新，带有下载进度
+
+  flutter_native_splash: 2.2.16   # 开屏
+  flutter_local_notifications: 12.0.4   # 跨平台的通知栏
+  flutter_reactive_ble: 5.0.2     # 蓝牙
+
+  encrypt: 5.0.1              # 双向加密的高级 API
+  password: 1.0.0             # 上面加密的解密
+
+  easy_localization: 3.0.1    # 国际化和本地化您的 Flutter 应用程序
+  app_installer: 1.1.0        # 全新的Android+iOS应用安装插件，支持打开应用商店和编辑评论，以及安装Apk文件。
+  flutter_ume: 1.1.1+1        # UME 是 Fl​​utter 应用程序的应用程序内调试工具包平台。
+
+
+
+################################################  多媒体库  ###################################################
+  video_player: 2.4.8         # 视频播放器
+  flick_video_player: 0.5.0   # 视频播放器
+  better_player: 0.0.83       # 视频播放器
+  chewie: 1.3.6               # 视频播放器
+  youtube_player_flutter: 8.1.1 # 视频播放器
+
+  audioplayers: 1.1.1         # 音频播放器
+  assets_audio_player: 3.0.6  # 音频播放器
+  flutter_sound: 9.2.13       # 音频录制
+  photo_view: 0.14.0          # 大图预览，可放大缩小
+  image_picker: 0.8.6         # 图片选择器
+  wechat_assets_picker: 8.1.4 # 基于微信UI的图片选择器
+  image_cropper: 3.0.1        # 图片裁剪
+  wechat_camera_picker: 3.6.3 # 基于微信UI的相机
+  gallery_saver: 2.3.2        # 图片、视频保存
+
+  facebook_audience_network: 1.0.1  # facebook的广告
+
+  qr_code_scanner: 1.0.1      # 扫描二维码
+  tesseract_ocr: 0.4.20       # OCR功能
+  syncfusion_flutter_pdf: 20.3.59   # 用于在 Android、iOS 和 Web 平台上创建、阅读、编辑和保护 PDF 文件。
+  syncfusion_flutter_pdfviewer: 20.3.59    # PDF查看
+  pdf: 3.8.4                  # 为Web或Flutter创建pdf文件。
+  excel: 1.1.5                # 一个 flutter 和 dart 库，用于读取、创建、编辑和更新 Excel 表。
+  translator: 0.1.7           # 用于 Dart 的免费且无限制的 Google 翻译 API。
+
+  flame: 1.5.0                # Flutter游戏引擎。
+
+
+################################################  账号相关库  ###################################################
+  flutter_signin_button: 2.0.0    # 社交帐号登录
+  flutter_login: 4.1.0            # 炫酷的登录页面
+
+
+################################################  PC/WEB库  ###################################################
+  fluent_ui: 4.1.0            # 适配Windows的组件库
+  macos_ui: 1.7.5             # 适配Mac的组件库
+  ant_design_flutter: 0.0.1+5 # 适配PC/WEB的组件库
+  responsive_framework: 0.2.0 # 适配多端的UI框架
+  flutter_adaptive_ui: 0.8.0+1 # 适配多端的UI框架
+  sizer: 2.0.15               # 多端适配框架
+
+################################################  AR/机器学习  ###################################################
+  arcore_flutter_plugin: 0.0.11   # 用于ARCore SDK的Flutter插件，Android平台可构建新的增强现实体验。
+  arkit_plugin: 1.0.5         # ARKit-Apple的iOS移动设备增强现实（AR）开发平台。
+  google_ml_kit: 0.13.0       # 谷歌为移动平台制作的独立机器学习套件。
+  ml_algo: 16.17.4            # 机器学习算法、机器学习模型性能评估功能。
+  opencv_4: 1.0.0             # opencv
+  tflite: 1.1.2               # 用于访问 TensorFlow Lite 的 Flutter 插件
+  tflite_flutter: 0.9.0       # TensorFlow Lite Flutter插件提供了轻松，灵活和快速的Dart API，可将TFLite模型集成到Flutter应用中。
+
 
 dev_dependencies:
   flutter_test:
