@@ -16,6 +16,7 @@ dependencies:
   fsuper: 2.1.1               # 综合UI组件库
 
   extended_sliver: 2.1.3      # sliver的扩展，可用于AppBar
+  status_bar_control: 3.2.1   # 状态栏控件，可让您控制 iOS 和 Android 中的状态栏颜色、样式（主题）、可见性和半透明属性
 
   curved_drawer: 0.1.2        # 炫酷的抽屉
   sidebarx: 0.14.0            # 适配多端的抽屉
@@ -142,15 +143,22 @@ dependencies:
 
   flutter_native_splash: 2.2.16   # 开屏
   flutter_local_notifications: 12.0.4   # 跨平台的通知栏
-  flutter_reactive_ble: 5.0.2     # 蓝牙
+  flutter_reactive_ble: 5.0.2 # 蓝牙
+  flutter_blue: 0.8.0         # 蓝牙
+  telephony: 0.2.0            # 用于使用电话功能，例如获取网络信息、拨打电话、发送和接收 SMS 以及侦听传入的 SMS。
 
+  flutter_vibrate: 1.3.0      # 触觉反馈插件
+
+  live_icon: 0.0.1            # 用于实时更改应用程序图标和标签
   encrypt: 5.0.1              # 双向加密的高级 API
   password: 1.0.0             # 上面加密的解密
-
   easy_localization: 3.0.1    # 国际化和本地化您的 Flutter 应用程序
   app_installer: 1.1.0        # 全新的Android+iOS应用安装插件，支持打开应用商店和编辑评论，以及安装Apk文件。
-  flutter_ume: 1.1.1+1        # UME 是 Fl​​utter 应用程序的应用程序内调试工具包平台。
-
+  flutter_ume: 1.1.1+1        # UME是Flutter应用程序的应用程序内调试工具包平台。
+  screen_protector: 1.1.4     # 通过应用程序后台屏幕截图和防止 Android 和 iOS 屏幕截图安全数据泄漏
+  palestine_trusted_device: 0.1.1   # 检查设备是否为模拟器、root、越狱、开发者模式等。
+  safe_device: 1.1.2          # 可以轻松实现越狱、root、模拟器和虚假位置检测等安全步骤。
+  flutter_shortcuts: 1.3.0    # 用于在主屏幕上创建静态和动态应用程序/对话快捷方式。
 
 
 ################################################  多媒体库  ###################################################
@@ -163,14 +171,14 @@ dependencies:
   audioplayers: 1.1.1         # 音频播放器
   assets_audio_player: 3.0.6  # 音频播放器
   flutter_sound: 9.2.13       # 音频录制
+  volume_controller: 2.0.4    # 用于 ios 和 android 控制系统音量的 Flutter 音量插件
+
   photo_view: 0.14.0          # 大图预览，可放大缩小
   image_picker: 0.8.6         # 图片选择器
   wechat_assets_picker: 8.1.4 # 基于微信UI的图片选择器
   image_cropper: 3.0.1        # 图片裁剪
   wechat_camera_picker: 3.6.3 # 基于微信UI的相机
   gallery_saver: 2.3.2        # 图片、视频保存
-
-  facebook_audience_network: 1.0.1  # facebook的广告
 
   qr_code_scanner: 1.0.1      # 扫描二维码
   tesseract_ocr: 0.4.20       # OCR功能
@@ -179,7 +187,7 @@ dependencies:
   pdf: 3.8.4                  # 为Web或Flutter创建pdf文件。
   excel: 1.1.5                # 一个 flutter 和 dart 库，用于读取、创建、编辑和更新 Excel 表。
   translator: 0.1.7           # 用于 Dart 的免费且无限制的 Google 翻译 API。
-
+  facebook_audience_network: 1.0.1  # facebook的广告
   flame: 1.5.0                # Flutter游戏引擎。
 
 
@@ -195,6 +203,7 @@ dependencies:
   responsive_framework: 0.2.0 # 适配多端的UI框架
   flutter_adaptive_ui: 0.8.0+1 # 适配多端的UI框架
   sizer: 2.0.15               # 多端适配框架
+  screen_capturer: 0.1.3      # 允许 Flutter 桌面应用程序捕获屏幕截图。
 
 ################################################  AR/机器学习  ###################################################
   arcore_flutter_plugin: 0.0.11   # 用于ARCore SDK的Flutter插件，Android平台可构建新的增强现实体验。
@@ -204,6 +213,9 @@ dependencies:
   opencv_4: 1.0.0             # opencv
   tflite: 1.1.2               # 用于访问 TensorFlow Lite 的 Flutter 插件
   tflite_flutter: 0.9.0       # TensorFlow Lite Flutter插件提供了轻松，灵活和快速的Dart API，可将TFLite模型集成到Flutter应用中。
+  mlkit_scanner: 0.3.3        # 适用于 iOS 和 Android 的 Google MLKit API 检测条形码、文本、面部和对象的 Flutter 插件
+  mobile_scanner: 2.1.0       # 基于 MLKit 的 Flutter 通用条码和二维码扫描器，qr_code_scanner的持续工作。
+  face_camera: 0.0.5          # 实时检测人脸的 Flutter 相机插件，一旦检测到人脸，它可以自动捕捉
 
 
 dev_dependencies:
